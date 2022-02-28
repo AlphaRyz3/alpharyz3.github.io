@@ -151,7 +151,7 @@ nav [id="menu"]{display:none;}
     color: white;
     border: var(--clr-neon) 0.125em solid;
     padding: 0.25em 1em;
-    border-radius: 0.25em;
+    border-radius: 1em;
 
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 
@@ -176,6 +176,7 @@ nav [id="menu"]{display:none;}
 }
 
 .neon-button::after {
+    border-radius: 0.9em;
     content: "";
     position: absolute;
     top: 0;
@@ -207,6 +208,12 @@ nav [id="menu"]{display:none;}
 
 /*--------------------------*/
 /* L'intestazione Homepage */
+
+.left {
+    padding-top: 180px;
+    margin-right: 200px;
+}
+
 .header {
     height: 100vh;
     position: relative;
@@ -237,12 +244,149 @@ header img[alt="illustration"] {
     width: 55vmin;
     border-radius: 1rem;
     z-index: 9;
-    box-shadow: 0 0 20px var(--blu-scuro);
+    box-shadow: 0 0 20px white;
 }
 header img[alt="wave"] {
     position: absolute;
     width: 100%;
     bottom: 0;
+}
+/*------------------------------*/
+/* Sezione con introduzione agli articoli */
+
+/* Titolo */
+section {
+    height: auto;
+    position: relative;
+}
+fieldset {
+    border: none;
+    border-top: 3px solid black;
+    margin: 10vh 10vmin 4vh;
+}
+legend {
+    text-align:center;
+    padding: 0 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: black;
+}
+/*----------------------------------------*/
+
+
+/*-----------------------------------------*/
+
+
+
+/* introduzione agli argomenti */
+.banner {
+    height: 50vh;
+    margin: 40px 10vmin;
+    display: flex;
+    flex-direction: row;
+}
+.banner__image {
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: url(../assets/blob-1.svg);
+    background-size: contain;
+    background-position: center center;
+}
+#banner__lastImg {
+    color: #55468B;
+    background-image: url(../assets/blob-2.svg);
+    background-size: cover;
+    background-position: center center;
+}
+.banner__box {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.banner__box__text {
+    padding: 30px;
+    color: #16425b80;
+}
+.banner__box__text h3 {
+    font-size: 2.25rem;
+    margin-bottom: 0;
+}
+.banner__box__text h4 {
+    font-size: 1.375rem;
+    margin: 5px 0;
+    color: #16425b80;
+}
+.banner__box__text__divider {
+    display: inline-block;
+    height: 5px;
+    width: 40px;
+    background-color: #6ea6b7;
+}
+.banner__box__text p {
+    line-height: 2rem;
+    width: 80%;
+    margin-bottom: 40px;
+}
+.banner__box__text__link {
+    text-decoration: none;
+    color: #8D7DB2;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.banner__box__text__link span {
+    transition: all 200ms ease-in-out;
+}
+.banner__box__text__link:hover span {
+    margin-left: 5px;
+}
+.banner__box__text__link:hover {
+    border-bottom: 2px solid #8D7DB2;
+}
+
+/* CSS per articoli argomentati */
+main .header__title {
+    color: #16425B;
+}
+main section {
+    position: absolute;
+    top: 21em;
+    margin: 0 16vmin;
+    padding-bottom: 10vh;
+}
+main section h3 {
+    text-transform: uppercase;
+    font-size: 3.5vmin;
+    line-height: 2em;
+    color: #16425B;
+}
+main section p, main section ul li {
+    line-height: 1.8em;
+    font-size: 2.4vmin;
+    color: #16425B;
+}
+main section ul {
+    margin-top: 15px;
+}
+main section div {
+    padding-top: 7vh;
+}
+
+.link {
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px white;
+    max-width: 400px;
+    padding: 0;
+}
+.link ul {
+    list-style-type:none;
+    padding: 15px;
+    margin-top: 5px;
+}
+.link ul li a {
+    text-decoration: none;
+    color: blue;
 }
 
 
