@@ -8,7 +8,52 @@
         <meta http-equiv="X-UA-Compatible" content="IE=7"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="css/style.css"/>
+        <link rel="icon" type="image/png" href="./assets/website-logo.png"/>
 
         <title>Chillers</title>
     </head>
+    <nav>
+        <ul>
+            <figure>
+                <img id="small-logo" src="./assets/chiller-logo.png" alt="logo1"/>
+            </figure>
+
+            <li id="nav__logo">Chillers</li>
+
+            <li class="nav__item"><a href="#">Premium</a></li>
+            <li class="nav__item"><a href="#">Commands</a></li>
+            <li class="nav__item"><a href="#">Dashboard</a></li>
+
+
+            <a href="javascript:void(0)" onclick="openNav()" id="menu"><img src="./assets/menu.svg" alt=""></a>
+            <div id="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Premium</a>
+                <a href="#">Commands</a>
+                <a href="#">Dashboard</a>
+            </div>
+
+            <script>
+                function openNav() { document.getElementById("sidenav").style.width = "250px" }
+                function closeNav() { document.getElementById("sidenav").style.width = "0"; }
+            </script>
+        </ul>
+    </nav>
+    <!-- L'intestazione Homepage -->
+    <header class="header">
+
+        <div class="header__title">
+            <h1>Best Music Bot EVVA</h1>
+
+            <a href="#" class="neon-button">Invite Me</a>
+        </div>
+
+        <figure>
+            <img src="images/img.jpeg" alt="illustration" />
+        </figure>
+        <figure>
+            <img src="images/wave.svg" alt="wave">
+        </figure>
+
+    </header>
 </html>
